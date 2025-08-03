@@ -1,0 +1,27 @@
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mynetwork
+
+  nodeapp:
+    build: .
+    container_name: nodeapp
+    ports:
+      - "5050:5050"
+    depends_on:
+      - mongo
+    networks:
+      - mynetwork
+
+volumes:
+  mongo-data:
+
+networks:
+  mynetwork:
+    driver: bridge

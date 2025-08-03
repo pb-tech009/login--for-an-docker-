@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.18.0"
+  },
+  "name": "docker-testapp-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

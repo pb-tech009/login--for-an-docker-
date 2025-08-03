@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px;
+  width: 50%;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #2575fc;
+  color: white;
+}
+
+.form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.main-page {
+  text-align: center;
+}
+
+.main-logo {
+  font-size: 30px;
+  animation: glow 1.5s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #2575fc; }
+  to { text-shadow: 0 0 20px #66a6ff; }
+}
